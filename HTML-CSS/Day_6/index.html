@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Text-Overflow Property Lab</title>
+		<link rel="stylesheet" href="styles.css" />
+		<style>
+			#container1 {
+			  width: 300px;
+			  border: 1px solid #ccc;
+			  overflow: hidden;
+			}
+		
+			#text1 {
+			  white-space: nowrap;
+			  overflow: hidden;
+			  text-overflow: ellipsis;
+			}
+
+            #container2 {
+			  width: 300px;
+			  border: 1px solid #ccc;
+			  overflow: hidden;
+			}
+
+            #text2 {
+			  white-space: nowrap;
+			  overflow: scroll;
+			  text-overflow: clip;
+			}
+		  </style>
+	</head>
+	<body>
+		<div id="container1">
+			<p id="text1">This is a longer text that exceeds the container's width and will be truncated with an ellipsis. This is a longer text that exceeds the container's width and will be truncated with an ellipsis.</p>
+		</div>
+        <div id="container2">
+			<p id="text2">This is a longer text that exceeds the container's width and will be truncated with an ellipsis. This is a longer text that exceeds the container's width and will be truncated with an ellipsis.This is a longer text that exceeds the container's width and will be truncated with an ellipsis. This is a longer text that exceeds the container's width and will be truncated with an ellipsis.</p>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
